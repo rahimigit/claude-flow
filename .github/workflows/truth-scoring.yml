@@ -1,11 +1,7 @@
 name: 🎯 Truth Scoring Pipeline
 
 on:
-  pull_request:
-    branches: [main, develop]
-    types: [opened, synchronize, reopened]
-  push:
-    branches: [main]
+  # automatic triggers removed 2026-10-30 to stop burning hosted-runner minutes; run manually
   workflow_dispatch:
     inputs:
       target_branch:

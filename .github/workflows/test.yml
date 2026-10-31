@@ -1,10 +1,8 @@
 name: Test Suite
 
 on:
-  push:
-    branches: [ main, develop, claude-flow-v2.0.0 ]
-  pull_request:
-    branches: [ main, develop ]
+  # automatic triggers removed 2026-10-30 to stop burning hosted-runner minutes; run manually
+  workflow_dispatch:
 
 jobs:
   test:
